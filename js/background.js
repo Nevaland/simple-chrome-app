@@ -1,12 +1,12 @@
-const body = document.querySelector("body");
+const body = document.querySelector("body"),
+  locationContainer = document.querySelector(".js-location span");
 
 const IMG_NUMBER = 6;
 
 function paintImage(imgNumber) {
-  const image = new Image();
-  image.src = `images/${imgNumber + 1}.jpg`;
-  image.classList.add("bgImage");
-  body.prepend(image);
+  body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(images/${
+    imgNumber + 1
+  }.jpg)`;
 }
 
 function genRandom() {

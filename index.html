@@ -2,27 +2,38 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Test</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Simple ToDo App</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
-    </div>
-    <span class="js-weather"></span>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
+    <section class="center">
+      <span class="js-weather weather"></span>
 
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
+      <div class="js-clock clock">
+        <h3 class="clock__text">00:00</h3>
+      </div>
+
+      <div class="js-name name"></div>
+
+      <div>
+        <form class="js-to-do to-do">
+          <input
+            class="js-add-to-do to-do__add-to-do"
+            type="text"
+            placeholder="Write a To Do here"
+          />
+        </form>
+        <ul class="js-list list"></ul>
+      </div>
+    </section>
 
     <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
 
     <script src="js/key.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
